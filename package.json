@@ -1,0 +1,38 @@
+{
+  "scripts": {
+    "build": "babel source --out-dir .",
+    "prepublish": "npm run build"
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "name": "fitbit-animate",
+  "description": "This library allows create complex animations in Fitbit clockfaces and apps.",
+  "version": "0.1.0",
+  "main": "fitbit-animate.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ygalanter/fitbit-animate.git"
+  },
+  "keywords": [
+    "fitbitdev"
+  ],
+  "author": "Yuriy Galanter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ygalanter/fitbit-animate/issues"
+  },
+  "homepage": "https://github.com/ygalanter/fitbit-animate#readme"
+}
