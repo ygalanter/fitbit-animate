@@ -12,12 +12,17 @@ Install the library with `npm i fitbit-animate`
 
 Function `fitbit_animate` accepts sequence of animations in form of array where each element is an object with properties:
 
-*elem*:     [G Container](https://dev.fitbit.com/build/guides/user-interface/svg/#g-container) containing GUI elements you want to animate
-*prop*:     [groupTranform](https://dev.fitbit.com/build/guides/user-interface/animations/#javascript-animations) property, such as "translate" or "scale"
-*subprop*:  actual propety you want to animate, such as x or y.  
-*from*:     numeric value indicating animation start such as x or y coordinate or scale
-*to*:       numeric value indicating animation end
-*dur*:      duration of animation in milliseconds
+**elem**:     [G Container](https://dev.fitbit.com/build/guides/user-interface/svg/#g-container) containing GUI elements you want to animate
+
+**prop**:     [groupTranform](https://dev.fitbit.com/build/guides/user-interface/animations/#javascript-animations) property, such as "translate" or "scale"
+
+**subprop**:  actual propety you want to animate, such as x or y.  
+
+**from**:     numeric value indicating animation start such as x or y coordinate or scale
+
+**to**:       numeric value indicating animation end
+
+**dur**:      duration of animation in milliseconds
 
 Animation sequence can include multiple different GUI elements (G Containers) and each element can animate at different speed. Function returns a promise that resolves when all animation in the sequence are finished.
 
@@ -56,7 +61,7 @@ app/index.js
             subprop: "x",
             from: 1,
             to: 2,
-            dur: 2000
+            dur: 1000
         }
     ];
 
@@ -69,4 +74,4 @@ The above example will move circle from position (50, 50) to (100,100) while inc
 
 # Demo
 
-A demo is available [here](https://github.com/ygalanter/fitbit-animate-demo)
+A demo (animated starfield) is available [here](https://github.com/ygalanter/fitbit-animate-demo)
